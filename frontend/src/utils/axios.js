@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:4000/api/users',
+  baseURL: 'https://attendence-separator.onrender.com/api/users',
   headers: {
     'Content-Type': 'application/json',
   },
