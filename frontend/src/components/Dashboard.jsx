@@ -39,7 +39,7 @@ export default function Dashboard() {
 
     const fetchLastUpload = async () => {
       try {
-        const res = await axios.get("http://localhost:4000/last-upload");
+        const res = await axios.get("https://attendence-separator.onrender.com/last-upload");
         if (res.data.uploadedAt) {
           const uploadedDate = new Date(res.data.uploadedAt);
           const formatted = uploadedDate.toLocaleString("en-IN", {
@@ -79,7 +79,7 @@ export default function Dashboard() {
       setProgress(0);
       setUploadMessage("");
 
-      const res = await axios.post("http://localhost:4000/upload", formData, {
+      const res = await axios.post("https://attendence-separator.onrender.com/upload", formData, {
         headers: { "Content-Type": "multipart/form-data" },
         onUploadProgress: (progressEvent) => {
           const percent = Math.round(
