@@ -122,7 +122,7 @@ export default function Dashboard() {
     doc.setFont("times", "bold");
     doc.setFontSize(14);
     doc.text(
-      "DHANEKULA INSTITUTE OF ENGINEERING AND TECHNOLOGY",
+      "DHANEKULA INSTITUTE OF ENGINEERING &  TECHNOLOGY",
       pageWidth / 2,
       y,
       { align: "center" }
